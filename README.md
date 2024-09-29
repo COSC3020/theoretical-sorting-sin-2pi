@@ -16,3 +16,11 @@ Also give a theoretical argument for why X could or could not be correct, based
 on the complexity of the general sorting problem we covered in class.
 
 Add your answers to this markdown file.
+
+## Answer
+
+Under the assumption that this algorithm sorts in $O(n)$ time, I can think of a good way to test this. If you have a dataset $n$ that runs at a time of $x$, then the dataset of size $2n$ should run at a time of $2x$. It should scale linearlly, as the time complexity suggests. If the run time scales logarithmically, exponentially, or anything other than linearly, the algorithm does not truly sort in $O(n)$ time.
+
+I believe that this just cannot be correct. The best case for a sorting algorithm is insertion sort, it runs at $O(n)$ *if* all the elements are already sorted. Without having a specialized case, or some kind of presorted dataset, I believe that it is not possible for a general sorting algorithm like this to have a time complexity of $O(n)$
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
